@@ -1,0 +1,17 @@
+type Query {
+    country(code: "US") { 
+        code
+        name
+        phone
+        capital
+        currency
+        continent {
+            code
+            name
+            countries{
+                name
+                capital
+            }
+        }
+    }
+}
